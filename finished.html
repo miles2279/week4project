@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="javascript/scoreHandler.js"></script>
+    <title>Quiz Simulator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="getTopScores()">
+        <div class="main-content-wrapper">
+            <div class="main-quiz-wrapper">
+                <h1>Complete!</h1>
+                <div class="separating-line"></div>
+                <span>You have completed this challenge. Claim your glory!</span>
+                <div class="separating-line"></div>
+                <div id="name-label" class="name-label">ENTER YOUR NAME</div>
+                <input class="name-input" type="text" placeholder="Enter your name" id="name-input" />
+                <div class="name-label">TOP SCORES</div>
+                <div id="score-container"></div>
+                <div id="button-container"></div>
+            </div>
+        </div>
+    </body>
+</html>

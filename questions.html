@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="./javascript/questionsHandler.js"></script>
+    <script src="./javascript/timerHandler.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="getQuestionDetails(); initializeTimer();">
+        <div class="main-content-wrapper">
+            <div class="main-quiz-wrapper">
+                <div class="timer-wrapper" id="timer-wrapper">Starting Timer...</div>
+                <h1 id="question-number">Q</h1>
+                <h2 id="question-header-text"></h2>
+                <div class="separating-line"></div>
+                <form action="javascript:void(0);" onsubmit="nextQuestion()">
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="a"
+                        id="qa"
+                        onclick="javascript:checkAnswer('a')"
+                    />
+                    <label id="qa-text" for="qa"></label>
+                    <br />
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="b"
+                        id="qb"
+                        onclick="javascript:checkAnswer('b')"
+                    />
+                    <label id='qb-text' for="qb"></label>
+                    <br />
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="c"
+                        id="qc"
+                        onclick="javascript:checkAnswer('c')"
+                    />
+                    <label id="qc-text" for="qc"></label>
+                    <br />
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="d"
+                        id="qd"
+                        onclick="javascript:checkAnswer('d')"
+                    />
+                    <label id="qd-text" for="qd"></label>
+                    <br />
+                    <div id="response-container"></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
