@@ -60,7 +60,7 @@ function nextQuestion(){
         if(parseInt(questionNumber) < 3){
             window.location.href = "?question=" + nextQuestionNumber
         }else{ 
-            window.location.href = "/finished.html"
+            window.location.href = "./finished.html"
         }
     }
 }
